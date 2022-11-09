@@ -1,0 +1,22 @@
+DBT Assignment - 1
+
+Solution:
+1) a. Entity Sets:
+-> Professor: with SIN underlined as primary key,
+-> Course: with CID underlined as Primary Key,
+-> Semester : with SID underlined as Primary Key.
+Relatioship Set:
+-> teaches : associates professor, course and semester. 
+No other attributes. The cardinality constraint is m-to-n. 
+There is a single candidate key of the teaches relationship: {SIN, CID, SID}. 
+The participation constraint can be anything; let say that it is total on professor and course entity sets.
+
+1) b. Semester does not need to be an entity set here. Teaches is a binary relation between professor and course. 
+Semester is attribute of teaches. 
+The key o f teaches is {SIN, CID}.
+
+1) c. This means total participation from professors and total participation from courses.
+Because it is still m-to-n, the candidate key remains {SIN, CID}. 
+
+1) d) This time the relationship is 1-to-1. 
+There are now two candidate keys: either {SIN} or {CID}.
